@@ -23,12 +23,13 @@ import frc.robot.Constants.SwerveConstants;
 public class TrajectoryCache {
     private FileLog log;
    
-    private static int trajectoryCount = 2;
+    private static int trajectoryCount = 3;
     public TrajectoryFacing[] cache = new TrajectoryFacing[trajectoryCount];        // array of trajectories
 
     public enum TrajectoryType {
         test(0),
-        testCurve(1);
+        testCurve(1),
+        tryoutTraj(2);
         // CenterBalanceBlue(2),
         // CenterBalanceRed(3),
         // LeaveCommunity(4),
@@ -161,7 +162,43 @@ public class TrajectoryCache {
                 List.of(),
                 new Pose2d(3, 3, new Rotation2d(Math.toRadians(90.0)))
             )
-        );     
+        );
+
+        // TODO: Robot dimensions 36in x 36in
+        // TODO: Corners are 26in from center
+        // TODO: Min dist from center robot to center barrel: 29in
+        // 0.0254in = 1m
+        
+        cache[TrajectoryType.tryoutTraj.value] = new TrajectoryFacing(
+            new Rotation2d(0.0),            // Start facing +X direction
+            new Rotation2d(Math.PI),                // End facing -X direction
+            calcTrajectory("Tryout Trajectory", 0.4, 0.4, 
+                new Pose2d(45 * 0.254, 90 * 0.254, new Rotation2d(0.0)),
+                List.of(
+                    new Translation2d(150 * 0.254, 110 * 0.254),
+                    new Translation2d(200 * 0.254, 60 * 0.254),
+                    new Translation2d(150 * 0.254, 27 * 0.254),
+                    new Translation2d(90 * 0.254, 60 * 0.254),
+                    new Translation2d(150 * 0.254, 110 * 0.254),
+                    new Translation2d(240 * 0.254, 75 * 0.254),
+                    new Translation2d(270 * 0.254, 90 * 0.254),
+                    new Translation2d(285 * 0.254, 120 * 0.254),
+                    new Translation2d(270 * 0.254, 140 * 0.254),
+                    new Translation2d(240 * 0.254, 153 * 0.254),
+                    new Translation2d(210 * 0.254, 140 * 0.254),
+                    new Translation2d(195 * 0.254, 120 * 0.254),
+                    new Translation2d(210 * 0.254, 75 * 0.254),
+                    new Translation2d(240 * 0.254, 40 * 0.254),
+                    new Translation2d(300 * 0.254, 27 * 0.254),
+                    new Translation2d(325 * 0.254, 35 * 0.254),
+                    new Translation2d(333 * 0.254, 60 * 0.254),
+                    new Translation2d(320 * 0.254, 87 * 0.254),
+                    new Translation2d(250 * 0.254, 80 * 0.254),
+                    new Translation2d(150 * 0.254, 100 * 0.254)
+                ),
+                new Pose2d(30 * 0.254, 90 * 0.254, new Rotation2d(Math.PI))
+            )
+        );
         
         // cache[TrajectoryType.CenterBalanceBlue.value] = new TrajectoryFacing(
         //     new Rotation2d(Math.PI),            // Start facing driver station
