@@ -22,10 +22,6 @@ import frc.robot.Constants.SwerveConstants;
  */
 public class TrajectoryCache {
     private FileLog log;
-   
-    private static int trajectoryCount = 3;
-    public TrajectoryFacing[] cache = new TrajectoryFacing[trajectoryCount];        // array of trajectories
-
     public enum TrajectoryType {
         test(0),
         testCurve(1),
@@ -45,6 +41,10 @@ public class TrajectoryCache {
         public final int value;
         TrajectoryType(int value) { this.value = value; }
     }
+
+    
+    public TrajectoryFacing[] cache = new TrajectoryFacing[TrajectoryType.values().length];        // array of trajectories
+
 
     /**
      * A trajectory with initial and final facing for the robot
@@ -164,9 +164,9 @@ public class TrajectoryCache {
             )
         );
 
-        // TODO: Robot dimensions 36in x 36in
-        // TODO: Corners are 26in from center
-        // TODO: Min dist from center robot to center barrel: 29in
+        // Robot dimensions 36in x 36in
+        // Corners are 26in from center
+        // Min dist from center robot to center barrel: 29in
         // 0.0254in = 1m
         
         cache[TrajectoryType.tryoutTraj.value] = new TrajectoryFacing(
