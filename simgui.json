@@ -20,6 +20,7 @@
       "/SmartDashboard/Drive Trajectory Relative": "Command",
       "/SmartDashboard/Drive Trajectory S-Fwd Relative": "Command",
       "/SmartDashboard/Drive Trajectory Straight": "Command",
+      "/SmartDashboard/Drive Tryout Trajectory Relative": "Command",
       "/SmartDashboard/Drive Wheels +85 deg": "Command",
       "/SmartDashboard/Drive Wheels +95 deg": "Command",
       "/SmartDashboard/Drive Wheels 0 deg": "Command",
