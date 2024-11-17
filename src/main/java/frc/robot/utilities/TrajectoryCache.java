@@ -173,30 +173,30 @@ public class TrajectoryCache {
             new Rotation2d(0.0),            // Start facing +X direction
             new Rotation2d(Math.PI),                // End facing -X direction
             calcTrajectory("Tryout Trajectory", 0.4, 0.4, 
-                new Pose2d(45 * 0.254, 90 * 0.254, new Rotation2d(0.0)),
+                new Pose2d(45 * 0.0254, 90 * 0.0254, new Rotation2d(0.0)),
                 List.of(
-                    new Translation2d(150 * 0.254, 110 * 0.254),
-                    new Translation2d(200 * 0.254, 60 * 0.254),
-                    new Translation2d(150 * 0.254, 29 * 0.254),
-                    new Translation2d(90 * 0.254, 60 * 0.254),
-                    new Translation2d(150 * 0.254, 110 * 0.254),
-                    new Translation2d(240 * 0.254, 75 * 0.254),
-                    new Translation2d(270 * 0.254, 90 * 0.254),
-                    new Translation2d(285 * 0.254, 120 * 0.254),
-                    new Translation2d(270 * 0.254, 140 * 0.254),
-                    new Translation2d(240 * 0.254, 151 * 0.254),
-                    new Translation2d(210 * 0.254, 140 * 0.254),
-                    new Translation2d(195 * 0.254, 120 * 0.254),
-                    new Translation2d(210 * 0.254, 75 * 0.254),
-                    new Translation2d(240 * 0.254, 40 * 0.254),
-                    new Translation2d(300 * 0.254, 29 * 0.254),
-                    new Translation2d(325 * 0.254, 35 * 0.254),
-                    new Translation2d(332 * 0.254, 60 * 0.254),
-                    new Translation2d(318 * 0.254, 87 * 0.254),
-                    new Translation2d(250 * 0.254, 80 * 0.254),
-                    new Translation2d(150 * 0.254, 100 * 0.254)
+                    new Translation2d(150 * 0.0254, 110 * 0.0254),
+                    new Translation2d(200 * 0.0254, 60 * 0.0254),
+                    new Translation2d(150 * 0.0254, 29 * 0.0254),
+                    new Translation2d(90 * 0.0254, 60 * 0.0254),
+                    new Translation2d(150 * 0.0254, 110 * 0.0254),
+                    new Translation2d(240 * 0.0254, 75 * 0.0254),
+                    new Translation2d(270 * 0.0254, 90 * 0.0254),
+                    new Translation2d(285 * 0.0254, 120 * 0.0254),
+                    new Translation2d(270 * 0.0254, 140 * 0.0254),
+                    new Translation2d(240 * 0.0254, 151 * 0.0254),
+                    new Translation2d(210 * 0.0254, 140 * 0.0254),
+                    new Translation2d(195 * 0.0254, 120 * 0.0254),
+                    new Translation2d(210 * 0.0254, 75 * 0.0254),
+                    new Translation2d(240 * 0.0254, 40 * 0.0254),
+                    new Translation2d(300 * 0.0254, 29 * 0.0254),
+                    new Translation2d(325 * 0.0254, 35 * 0.0254),
+                    new Translation2d(332 * 0.0254, 60 * 0.0254),
+                    new Translation2d(318 * 0.0254, 87 * 0.0254),
+                    new Translation2d(250 * 0.0254, 80 * 0.0254),
+                    new Translation2d(150 * 0.0254, 100 * 0.0254)
                 ),
-                new Pose2d(30 * 0.254, 90 * 0.254, new Rotation2d(Math.PI))
+                new Pose2d(30 * 0.0254, 90 * 0.0254, new Rotation2d(Math.PI))
             )
         );
         
